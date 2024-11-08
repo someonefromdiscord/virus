@@ -27,7 +27,7 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v1.0.0  # Specify your version tag
+          tag_name: latest  # Specify your version tag
           files: dist/dontopen.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
