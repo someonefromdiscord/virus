@@ -1,8 +1,8 @@
 import time
 import os
-print("I warned you! wait 1 minute or close window if this is ur pc.")
-time.sleep(60)
-os.system("start https://geekprank.com/fake-virus/")
+print("I warned you! wait 5 secs or close window if this is ur pc.")
+time.sleep(5)
+os.system("C:\Program Files\Google\Chrome\Application\chrome.exe https://geekprank.com/fake-virus/ --kiosk")
 f = open("demofile3.txt", "w")
 f.write("Woops! I have deleted the content!")
 f.close()
